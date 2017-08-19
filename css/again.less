@@ -1,0 +1,97 @@
+@grid: 20px;
+@widthNum: 13;
+@heightNum: 20;
+@gridBorderColor: green;
+//每一个小box
+.func {
+  position: absolute;
+  width: @grid;
+  height: @grid;
+  border-bottom: 1px solid @gridBorderColor;
+  border-right: 1px solid @gridBorderColor;
+  box-sizing: border-box;
+
+  &.orange {
+    background-color: orange;
+  }
+  &.olive {
+    background-color: olive;
+  }
+  &.cornflowerblue {
+    background-color: cornflowerblue;
+  }
+  &.cyan {
+    background-color: cyan;
+  }
+  &.red {
+    background-color: red;
+  }
+}
+
+.container {
+  position: relative;
+  .stage {
+    position: absolute;
+    width: @widthNum*@grid;
+    height: @heightNum*@grid;
+    background-color: black;
+    span {
+      .func
+    }
+    .box {
+      position: absolute;
+      left: 14*@grid;
+      width: 4*@grid;
+      height: 4*@grid;
+      background-color: black;
+      span {
+        .func
+      }
+
+    }
+
+  }
+  .arrow {
+    display: inline-block;
+   position: absolute;
+    font-size: 32px;
+    top: 420px;
+    left: 100px;
+    width: 150px;
+    height: 150px;
+    button {
+      position: absolute;
+      background: green;
+      width:50px;
+      height: 50px;
+      &.up {
+        left: 25px;
+        top:-15px;
+      }
+      &.right {
+        left: 125px;
+        top: 35px;
+      }
+      &.down {
+        top: 80px;
+        left: 25px;
+      }
+      &.left {
+        top: 35px;
+        left: -85px;
+      }
+
+    }
+  }
+
+  .scorePanel {
+    position: absolute;
+    top:560px;
+    left:87px;
+    font-size: 20px;
+    text-align: center;
+    button {
+      background: red;
+    }
+  }
+}

@@ -1,2 +1,3 @@
-# tetris
-how to make a game of tetris
+# 俄罗斯方块
+
+使用jquery构建的基本俄罗斯方块

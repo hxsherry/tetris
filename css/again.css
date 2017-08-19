@@ -1,0 +1,126 @@
+.func {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid green;
+  border-right: 1px solid green;
+  box-sizing: border-box;
+}
+.func.orange {
+  background-color: orange;
+}
+.func.olive {
+  background-color: olive;
+}
+.func.cornflowerblue {
+  background-color: cornflowerblue;
+}
+.func.cyan {
+  background-color: cyan;
+}
+.func.red {
+  background-color: red;
+}
+.container {
+  position: relative;
+}
+.container .stage {
+  position: absolute;
+  width: 260px;
+  height: 400px;
+  background-color: black;
+}
+.container .stage span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid green;
+  border-right: 1px solid green;
+  box-sizing: border-box;
+}
+.container .stage span.orange {
+  background-color: orange;
+}
+.container .stage span.olive {
+  background-color: olive;
+}
+.container .stage span.cornflowerblue {
+  background-color: cornflowerblue;
+}
+.container .stage span.cyan {
+  background-color: cyan;
+}
+.container .stage span.red {
+  background-color: red;
+}
+.container .stage .box {
+  position: absolute;
+  left: 280px;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+}
+.container .stage .box span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid green;
+  border-right: 1px solid green;
+  box-sizing: border-box;
+}
+.container .stage .box span.orange {
+  background-color: orange;
+}
+.container .stage .box span.olive {
+  background-color: olive;
+}
+.container .stage .box span.cornflowerblue {
+  background-color: cornflowerblue;
+}
+.container .stage .box span.cyan {
+  background-color: cyan;
+}
+.container .stage .box span.red {
+  background-color: red;
+}
+.container .arrow {
+  display: inline-block;
+  position: absolute;
+  font-size: 32px;
+  top: 420px;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+}
+.container .arrow button {
+  position: absolute;
+  background: green;
+  width: 50px;
+  height: 50px;
+}
+.container .arrow button.up {
+  left: 25px;
+  top: -15px;
+}
+.container .arrow button.right {
+  left: 125px;
+  top: 35px;
+}
+.container .arrow button.down {
+  top: 80px;
+  left: 25px;
+}
+.container .arrow button.left {
+  top: 35px;
+  left: -85px;
+}
+.container .scorePanel {
+  position: absolute;
+  top: 560px;
+  left: 87px;
+  font-size: 20px;
+  text-align: center;
+}
+.container .scorePanel button {
+  background: red;
+}
