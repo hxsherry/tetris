@@ -1,0 +1,130 @@
+@grid: 24px;
+@box: 13px;
+@gridBorderColor: #342721;
+//每一个小box
+body {
+  position: relative;
+  top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 1px;
+  margin: 0;
+  overflow: hidden;
+  background: #bbb;
+}
+
+.func {
+  position: absolute;
+  width: @grid;
+  height: @grid;
+  border: 1px solid @gridBorderColor;
+
+  box-sizing: border-box;
+
+  &.orange {
+    background-color: orange;
+  }
+  &.olive {
+    background-color: olive;
+  }
+  &.cornflowerblue {
+    background-color: cornflowerblue;
+  }
+  &.cyan {
+    background-color: cyan;
+  }
+  &.red {
+    background-color: red;
+  }
+}
+
+.cover {
+  position: relative;
+  background: url("../img/cover.jpg") no-repeat fixed;
+  background-size: cover;
+  min-height: 600px;
+  min-width: 374px;
+  text-align: center;
+  button {
+    position: absolute;
+    display: none;
+    left: 37%;
+    top: 46%;
+    z-index: 10;
+    font-size: 23px;
+    border-radius: 10px;
+  }
+  #status {
+    position: absolute;
+    left: 37%;
+    top: 53%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #342721;
+  }
+
+}
+
+.container {
+  display: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  .stage {
+    position: absolute;
+    margin: 10px 0 0 12px;
+    span {
+      .func
+    }
+    .box {
+      position: absolute;
+      top: 30px;
+      left: 300px;
+      span {
+        .func;
+        width: @box;
+        height: @box;
+      }
+
+    }
+
+  }
+  .next {
+    position: absolute;
+    left: 310px;
+    top: 15px;
+  }
+
+  .scorePanel {
+    position: absolute;
+    top: 150px;
+    left: 310px;
+    text-align: left;
+    .left {
+      margin: 10px 0;
+    }
+    .count {
+      font-size: 20px;
+      text-align: right;
+    }
+    .guides {
+      position: absolute;
+      top: 185px;
+      left: 5px;
+
+      .guide {
+        margin-top:40px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        padding: 2px;
+
+      }
+
+    }
+
+  }
+}
+
+.bgColor {
+  background: red;
+}

@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-    <title>Tetris</title>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/again.js"></script>
-    <script type="text/javascript" src="js/howler.min.js"></script>
 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+
+    <title>Tetris</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/again.css">
+    <link rel="stylesheet" href="css/tetris.css">
 </head>
 <body>
+<div class="cover">
+    <button class="btn-danger">开始游戏</button>
+    <div id="status">正在加载中……</div>
+</div>
 <div class="container">
+
     <div class="stage">
         <div class="box">
         </div>
     </div>
-    <div class="arrow">
-        <button class="up">↑</button>
-        <button class="right">→</button>
-        <button class="down">↓</button>
-        <button class="left">←</button>
-    </div>
+    <div class="next">下一个</div>
+    <div class="scorePanel">
+        <div class="left">最高分</div>
+        <div class="highScore count">0</div>
+        <div class="left">得分</div>
+        <div class="score count">0</div>
 
-<div class="scorePanel">
-    <span>得分：</span>
-    <span class="score">0</span>
-    <div>
-        <span>最高得分：</span>
-        <span class="highScore">0</span>
-    </div>
-    <div>
-        <button class="reStart">重新开始</button>
+        <div class="guides">
+            <h4 class="guide guide-home">主页</h4>
+            <h4 class="guide guide-pause">暂停</h4>
+            <h4 class="guide reStart ">重启</h4>
+
+        </div>
     </div>
 
 </div>
 
-</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/tetris.js"></script>
+<script type="text/javascript" src="js/soundjs-0.6.2.min.js"></script>
+<script type="text/javascript" src="js/preloadjs-0.6.2.min.js"></script>
 </body>
 </html>

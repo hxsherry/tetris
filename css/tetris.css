@@ -1,0 +1,150 @@
+body {
+  position: relative;
+  top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 1px;
+  margin: 0;
+  overflow: hidden;
+  background: #bbb;
+}
+.func {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #342721;
+  box-sizing: border-box;
+}
+.func.orange {
+  background-color: orange;
+}
+.func.olive {
+  background-color: olive;
+}
+.func.cornflowerblue {
+  background-color: cornflowerblue;
+}
+.func.cyan {
+  background-color: cyan;
+}
+.func.red {
+  background-color: red;
+}
+.cover {
+  position: relative;
+  background: url("../img/cover.jpg") no-repeat fixed;
+  background-size: cover;
+  min-height: 600px;
+  min-width: 374px;
+  text-align: center;
+}
+.cover button {
+  position: absolute;
+  display: none;
+  left: 37%;
+  top: 46%;
+  z-index: 10;
+  font-size: 23px;
+  border-radius: 10px;
+}
+.cover #status {
+  position: absolute;
+  left: 37%;
+  top: 53%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #342721;
+}
+.container {
+  display: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.container .stage {
+  position: absolute;
+  margin: 10px 0 0 12px;
+}
+.container .stage span {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #342721;
+  box-sizing: border-box;
+}
+.container .stage span.orange {
+  background-color: orange;
+}
+.container .stage span.olive {
+  background-color: olive;
+}
+.container .stage span.cornflowerblue {
+  background-color: cornflowerblue;
+}
+.container .stage span.cyan {
+  background-color: cyan;
+}
+.container .stage span.red {
+  background-color: red;
+}
+.container .stage .box {
+  position: absolute;
+  top: 30px;
+  left: 300px;
+}
+.container .stage .box span {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #342721;
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+}
+.container .stage .box span.orange {
+  background-color: orange;
+}
+.container .stage .box span.olive {
+  background-color: olive;
+}
+.container .stage .box span.cornflowerblue {
+  background-color: cornflowerblue;
+}
+.container .stage .box span.cyan {
+  background-color: cyan;
+}
+.container .stage .box span.red {
+  background-color: red;
+}
+.container .next {
+  position: absolute;
+  left: 310px;
+  top: 15px;
+}
+.container .scorePanel {
+  position: absolute;
+  top: 150px;
+  left: 310px;
+  text-align: left;
+}
+.container .scorePanel .left {
+  margin: 10px 0;
+}
+.container .scorePanel .count {
+  font-size: 20px;
+  text-align: right;
+}
+.container .scorePanel .guides {
+  position: absolute;
+  top: 185px;
+  left: 5px;
+}
+.container .scorePanel .guides .guide {
+  margin-top: 40px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 2px;
+}
+.bgColor {
+  background: red;
+}
