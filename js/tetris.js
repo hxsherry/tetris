@@ -389,7 +389,12 @@ Game.prototype.bindTouchEvent = function () {
     var startTime = null;
     var isFastDrop = false;
     var isMoving = false;
-    var $body = $('body');
+
+    $("body").on("touchmove", function (event) {
+        event.preventDefault();
+    }, false);
+
+    var $body = $('.container');
     $body.on('touchstart', function (e) {
         if (!that.touch) {
             return;
@@ -675,7 +680,6 @@ Game.prototype.init = function () {
     this.bindKeyEvent();
     this.bindTouchEvent();
 };
-
 
 
 $(document).ready(function () {

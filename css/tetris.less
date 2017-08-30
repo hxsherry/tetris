@@ -1,7 +1,10 @@
 @grid: 24px;
 @box: 13px;
 @gridBorderColor: #342721;
-//每一个小box
+html{
+  width: 100%;
+  height: 100%;
+}
 body {
   position: relative;
   top: 0;
@@ -11,6 +14,8 @@ body {
   margin: 0;
   overflow: hidden;
   background: #bbb;
+  width: 100%;
+  height: 100%;
 }
 
 .func {
@@ -70,6 +75,8 @@ body {
   position: relative;
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
   .stage {
     position: absolute;
     margin: 10px 0 0 12px;
@@ -113,7 +120,7 @@ body {
       left: 5px;
 
       .guide {
-        margin-top:40px;
+        margin-top: 40px;
         border: 1px solid #000;
         border-radius: 3px;
         padding: 2px;
